@@ -29,7 +29,7 @@ const useGames = () => {
   useEffect(() => {
     const controller = new AbortController();
 
-    setLoading (true);
+    setLoading(true);
     apiClient
       .get<FetchGamesResponse>("/games", { signal: controller.signal })
       
